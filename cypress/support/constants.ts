@@ -1,7 +1,8 @@
 export const AppAPI = {
-    endPoint: "jsonplaceholder.typicode.com",
+    endPoint: "petstore.swagger.io",
+    v2Api: "/v2"
 };
 
 export const ApiPath = {
-    posts: "/posts"
+    pet: "/pet"
 };
