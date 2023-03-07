@@ -1,8 +1,7 @@
 export const AppAPI = {
-    endPoint: "api.todoist.com",
-    v2Api: "/rest/v2"
+    endPoint: "jsonplaceholder.typicode.com",
 };
 
 export const ApiPath = {
-    project: "/projects"
+    posts: "/posts"
 };

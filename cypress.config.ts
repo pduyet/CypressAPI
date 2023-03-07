@@ -14,7 +14,7 @@ export default defineConfig({
     inlineAssets: true,
     saveAllAttempts: false,
     embededScreenshots: true,
-    overwrite: false,
+    overwrite: true,
     html: false,
     json: true,
   },
@@ -24,7 +24,6 @@ export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-    },
-
-  },
+    }
+  }
 });
