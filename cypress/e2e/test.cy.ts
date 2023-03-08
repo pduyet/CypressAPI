@@ -14,7 +14,7 @@ describe("Test POST request", () => {
         "id": 0,
         "name": "string"
       },
-      "name": "trang",
+      "name": "new pet",
       "photoUrls": [
         "string"
       ],
@@ -66,7 +66,7 @@ describe("Test PUT request", () => {
         "id": 0,
         "name": "string"
       },
-      "name": "duyet",
+      "name": "update pet",
       "photoUrls": [
         "string"
       ],
@@ -87,6 +87,7 @@ describe("Test PUT request", () => {
     }
 
     cy.request(requestObject).then(res => {
+      expect(res.body.category.name).to.equal(body.category.name)
       return cy.log(JSON.stringify(res));
     })
   });
